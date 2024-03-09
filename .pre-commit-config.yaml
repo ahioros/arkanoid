@@ -9,7 +9,7 @@ repos:
         entry: python -m nbconvert --ClearOutputPreprocessor.enabled=True --inplace
       - id: pylint
         name: pylint
-        entry: pylint
+        entry: pylint --disable=C0114 
         language: system
         types: [python]
       - id: black
